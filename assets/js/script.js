@@ -1,17 +1,14 @@
-$(function(){
+//Funcion que cambia color de navbar con scroll 
 
-    $("a").click(function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
+$(window).scroll(function(){
 
-            var numeral= this.hash;
-
-            $("html, body").animate({
-                scrollTop: $(numeral).offset().top   
-            }, 800, function() {
-               window.location.hash = numeral; 
-            });
-        }
-    });
+    if ($(this).scrollTop() > 400) {
+        $("#menu").removeClass("navbar");
+       $('#menu').addClass("bg-interno");
+      } else {
     
-});
+       $("#menu").removeClass("bg-interno");
+       $('#menu').addClass("navbar");
+      }
+
+   });
