@@ -1,0 +1,19 @@
+body {
+    background-color: #000;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.logo {
+    width:5%;
+    height:auto;
+}
+
+hr {
+    background-color: rgb(68, 249, 255);
+}
+
+footer {
+    text-decoration: none;
+    color: #fff;
+}
